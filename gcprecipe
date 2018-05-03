@@ -1,9 +1,9 @@
 
-name_prefix="chef-demo"
-region = "us-central1"
-zone_a = "#{region}-a"
-zone_b = "#{region}-b"
-servers = []
+#name_prefix="chef-demo"
+#region = "us-central1"
+#zone_a = "#{region}-a"
+#zone_b = "#{region}-b"
+#servers = []
 
 gauth_credential 'mycred' do
   action :serviceaccount

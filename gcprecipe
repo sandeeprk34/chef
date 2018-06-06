@@ -73,6 +73,24 @@ gcompute_instance 'instance-test' do
   credential 'mycred'
 end
 
+#####After the above step we need to bootstrap the created GCP VM Instance as a node and Install the required packages as below.
+
+Package  “myhttpd” do
+         Package_ name “httpd”
+          Action: install
+End
+
+Package  “mykubectl” do
+         Package_ name “kubectl”
+          Action: install
+End
+
+Package  “ksonnet” do
+         Package_ name “ksonnet”
+          Action: install
+End
+
+
 
 
 gcompute_image 'test-image' do
